@@ -47,6 +47,8 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.instagram.InstagramOAuth2',
     'social_core.backends.facebook.FacebookOAuth2',
     'django.contrib.auth.backends.ModelBackend',
+    #'social.backends.vk.VKOAuth2',
+    'social_core.backends.vk.VKOAuth2',
 ]
 
 MIDDLEWARE = [
@@ -141,7 +143,9 @@ SOCIAL_AUTH_INSTAGRAM_EXTRA_DATA = [
 ]
 
 
-SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = 'xxxxxxxxxxxxxxxxxxxx'         #Client ID
+SOCIAL_AUTH_VK_OAUTH2_KEY = '7476454'
+SOCIAL_AUTH_VK_OAUTH2_SECRET = 'oydNI1bb7QbznsFKbeIy'
+
 SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = 'xxxxxxxxxxxxxxxxxxxx'  #Client Secret
 SOCIAL_AUTH_LINKEDIN_OAUTH2_SCOPE = ['r_basicprofile', 'r_emailaddress']
 SOCIAL_AUTH_LINKEDIN_OAUTH2_FIELD_SELECTORS = ['email-address', 'formatted-name', 'public-profile-url', 'picture-url']
